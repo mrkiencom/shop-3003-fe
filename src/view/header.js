@@ -204,7 +204,7 @@ export default function Header(props) {
             <div id="row-u">{userName}</div>
           </div>
           <div class="main-user-select">
-            <a class="main-user-select" href="/user">
+            <a class="main-user-select" href="/user/profile">
               Thông tin cá nhân
             </a>
           </div>
@@ -214,7 +214,7 @@ export default function Header(props) {
             </a>
           </div>
           <div class="main-user-select">
-            <a class="main-user-select" href="/">
+            <a class="main-user-select" href="/user/change-password">
               Thay đổi mật khẩu
             </a>
           </div>

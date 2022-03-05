@@ -18,8 +18,8 @@ import { GetApi } from "./api/get-api";
 import { deleteApi } from "./api/delete-api";
 import { PostApi } from "./api/post-api";
 import User from "./view/user/profile";
-import { setSourceMapRange } from "typescript";
 import HistoryOrder from "./view/user/history";
+import ChangePw from "./view/user/change-pass";
 function App() {
   const [item, setItem] = useState(
     JSON.parse(localStorage.getItem("listOrder")) || []
@@ -92,6 +92,7 @@ function App() {
     PostApi("", { listOrderId }, `orders/${host}`)
       .then((res) => {
         getOrder();
+        getListOrderUser();
       })
       .catch((err) => {
         console.log(err.response.message);
@@ -108,11 +109,23 @@ function App() {
         console.log(err.response.data.message);
       });
   };
-  const setFiller = (value) => {
-    const list = listOrderUser.filter((order) => {
-      return order.status === value;
-    });
-    setListOrderUser(list);
+  const setFiller = async (value) => {
+    if (value === "all") {
+      getListOrderUser();
+    } else {
+      GetApi("", "orders/by-user")
+        .then((res) => {
+          console.log(res.data);
+          setListOrderUser(
+            res.data.filter((res) => {
+              return res.status === value;
+            })
+          );
+        })
+        .catch((err) => {
+          console.log(err.response.data.message);
+        });
+    }
   };
   return (
     <div className="App">
@@ -124,7 +137,9 @@ function App() {
           }
         >
           <Route path="" element={<Middle />}></Route>
-          <Route path="user" element={<User />} />
+          <Route path="user/profile" element={<User />} />
+          <Route path="user/change-password" element={<ChangePw />} />
+
           <Route
             path="user/history"
             element={

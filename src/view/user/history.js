@@ -23,14 +23,14 @@ export default function HistoryOrder(props) {
     setTotal(totalP);
     console.log(total);
   };
-  const filter = ["pending", "deined", "approved"];
+  const filter = ["pending", "deneid", "approved"];
   return (
     <div class="main-history-order">
       <div class="fix-layout">
         <h1 id="text-name">Lịch sử đặt hàng</h1>
         <div>
           <select onChange={(e) => setFiller(e.target.value)}>
-            <option>Lọc theo trạng thái đơn hàng</option>
+            <option value="all">Trạng thái: Tất cả</option>
             {filter.map((item) => {
               return <option value={item}>Trạng thái: {item}</option>;
             })}
