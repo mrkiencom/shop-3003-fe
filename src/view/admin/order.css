@@ -1,0 +1,64 @@
+#button-order-admin > a {
+  margin-right: 10px;
+}
+#deneid:hover {
+  background-color: red;
+  color: honeydew;
+}
+#done:hover {
+  background-color: blue;
+  color: honeydew;
+}
+#approved:hover {
+  background-color: green;
+  color: honeydew;
+}
+#done,
+#approved {
+  color: green;
+}
+#deneid {
+  color: red;
+}
+.color-red {
+  color: red;
+}
+.color-blue {
+  color: royalblue;
+}
+.color-green {
+  color: green;
+}
+.background-order-admin {
+  background: white;
+  min-height: 90%;
+  width: 60%;
+  margin: 40px auto;
+  padding-top: 40px;
+}
+.xxx {
+  min-height: 605px;
+}
+.total {
+  display: flex;
+  justify-content: flex-end;
+}
+#total-price-detail-admin {
+  margin-right: 50px;
+  display: flex;
+  justify-content: flex-end;
+  width: 470px;
+  color: rgb(136, 49, 49);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+}
+#disable {
+  color: white;
+}
+#close-btn-order {
+  position: absolute;
+  top: 50px;
+  right: 400px;
+  font-size: 30px;
+  font-weight: 700;
+}

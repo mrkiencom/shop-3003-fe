@@ -1,0 +1,131 @@
+.product-list-admin {
+  width: 100%;
+  display: flex;
+  padding: 0;
+  border-bottom: 1pt solid rgb(136, 133, 133);
+  padding-bottom: 20px;
+}
+#name-avatar {
+  width: 30%;
+  justify-content: flex-start;
+  padding-left: 10px;
+}
+#description-admin {
+  width: 40%;
+}
+#price-admin,
+#quantity-admin,
+#type-admin {
+  width: 8%;
+}
+.product-list-admin > li {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+#box-img-admin {
+  height: 50px;
+  width: 100px;
+  overflow: hidden;
+}
+#box-img-admin > img {
+  width: 80px;
+  height: 40px;
+}
+#icon-button,
+#add-product {
+  width: 10%;
+}
+#icon-button > a {
+  margin-left: 20px;
+}
+a#red {
+  color: brown;
+}
+a#green {
+  color: green;
+}
+#text-name {
+  margin: 20px 0 40px 0;
+}
+#add-product {
+  justify-content: flex-end;
+}
+#add-product > a {
+  padding-right: 40px;
+}
+.show-edit-product-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgb(24, 23, 23);
+  opacity: 1;
+}
+.main-create-product {
+  padding-top: 30px;
+  margin: 30px auto;
+  width: 50%;
+  border: 1pt solid rgb(230, 228, 228);
+  background: rgb(247, 246, 246);
+  border-radius: 1%;
+}
+.main-box-product {
+  display: grid;
+  padding: 20px 150px 20px 150px;
+}
+.main-box-product > div {
+  height: 60px;
+  width: 100%;
+  margin-bottom: 20px;
+  display: grid;
+  align-items: center;
+}
+.main-box-product > div > input {
+  margin-top: 10px;
+  width: 100%;
+  height: 30px;
+}
+.main-box-product > div > label {
+  font-weight: 800;
+}
+#close-btn {
+  position: absolute;
+  top: 30px;
+  width: 49.5%;
+  text-align: end;
+}
+#btn-add {
+  height: 50px;
+  font-size: 30px;
+  font-weight: 400;
+  color: white;
+  background-color: green;
+}
+#show-error {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  width: 450px;
+  height: auto;
+  background-color: rgb(207, 148, 148);
+  display: grid;
+  font-size: 15px;
+  padding: 10px;
+  transition: 1s;
+}
+#show-error > div {
+  margin-bottom: 10px;
+  padding-left: 50px;
+}
+li#code {
+  width: 10%;
+  display: flex;
+  justify-content: start;
+  padding-left: 20px;
+}

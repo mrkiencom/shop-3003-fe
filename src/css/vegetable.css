@@ -1,0 +1,138 @@
+.main-types {
+  width: 100%;
+  height: auto;
+  padding: 37px 0 20px 0;
+  font-family: inherit;
+}
+.image-types {
+  width: 100%;
+  height: 165px;
+  overflow: hidden;
+}
+#image-types {
+  width: 100%;
+  height: 90%;
+  opacity: 0.9;
+}
+.main-content {
+  padding: 20px 300px 20px 300px;
+}
+.list-category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 50px 20px 50px;
+}
+.list-show-product {
+  padding: 30px 30px 30px 45px;
+  text-align: left;
+}
+.product-box {
+  display: inline-block;
+  height: 440px;
+  width: 266px;
+  margin-left: 30px;
+}
+.product-img-box {
+  width: 100%;
+  height: 286px;
+  overflow: hidden;
+}
+.product-img-box > img {
+  width: 100%;
+  height: 100%;
+}
+.product-box-text {
+  width: 100%;
+  text-align: left;
+}
+.title-product {
+  line-height: 1;
+  font-size: 1rem;
+  min-height: 40px;
+}
+p.title > a {
+  color: #941313;
+  font-size: 15px;
+  font-weight: 600;
+}
+.price-product {
+  text-align: left;
+  margin-bottom: 10px;
+  color: #111111;
+  font-weight: 800;
+  font-size: 14.4px;
+}
+.cart-box {
+  display: flex;
+  height: 36px;
+}
+.quantity {
+  width: 60%;
+  margin-right: 10px;
+  height: 100%;
+  border: 1pt solid rgb(177, 177, 177);
+}
+.quantity > button {
+  width: calc(100% / 3);
+  height: 100%;
+  color: black;
+  height: 100%;
+}
+.add-to-card-btn {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  text-shadow: none;
+  line-height: 2.4em;
+  min-height: 2.5em;
+  padding: 0 1.2em;
+  background: #2d2d2d;
+  color: white;
+}
+.add-to-card-btn:hover {
+  background: rgb(201, 198, 198);
+  color: #111111;
+}
+a.a-category-name {
+  height: 100%;
+  width: calc(100% / 10);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1pt solid rgb(214, 212, 212);
+}
+.li-category-name {
+  color: rgb(143, 143, 140);
+  font-weight: 800px;
+  font-size: 20px;
+  font-family: -webkit-body;
+}
+
+.li-category-name:hover {
+  color: rgb(43, 43, 41);
+}
+.name-category {
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  font-size: 35px;
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+}
+.name-category > b {
+  display: block;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 2px;
+  opacity: 0.1;
+  background-color: currentColor;
+  width: 80%;
+}
+#img-box {
+  width: 300px;
+  height: 300px;
+}

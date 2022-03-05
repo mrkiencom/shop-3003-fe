@@ -1,0 +1,30 @@
+.main-admin {
+  display: flex;
+  min-height: 100%;
+}
+.nav-link-page {
+  width: 300px;
+  display: grid;
+  padding-top: 20px;
+  border-right: 1pt solid rgb(155, 149, 149);
+  height: 100%;
+}
+.nav-link-page > a {
+  display: block;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1pt solid rgb(170, 168, 168);
+  color: black;
+}
+.contant-admin-page {
+  width: 100%;
+  padding: 30px 50px 30px 50px;
+}
+.background-view-admin {
+  border: 1pt solid rgb(167, 167, 167);
+  box-sizing: border-box;
+  box-shadow: 1px 4px 6px 3px #777777;
+  border-radius: 2%;
+}
